@@ -1,0 +1,7 @@
+.parent {
+    display: flex;
+    width: 100%;
+    overflow: auto;
+    justify-content: space-between;
+    height: 80.3vh;
+}

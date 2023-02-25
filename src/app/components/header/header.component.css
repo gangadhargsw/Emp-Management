@@ -11,5 +11,9 @@
     display:none;
     border : none !important;
     border-color: red;
-
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
   }

@@ -1,6 +1,8 @@
-<div style="display: flex;">
-<app-sidenav></app-sidenav>
-<div>
-    <router-outlet></router-outlet>
-</div>
+<div class="parent">
+    <div style="float: left;width: 15%;">
+        <app-sidenav></app-sidenav>
+    </div>
+    <div style="float: right;width: 85%;">
+        <router-outlet></router-outlet>
+    </div>
 </div>
