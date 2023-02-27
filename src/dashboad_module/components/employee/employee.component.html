@@ -1,24 +1,77 @@
 <div class="container">
-<h6>Employee Table</h6>
-<table class="table">
-    <thead>
-      <tr>
-        <th scope="col">Sl No.</th>
-        <th scope="col">Name</th>
-        <th scope="col">Email</th>
-        <th scope="col">department</th>
-        <th scope="col">Name</th>
-        <th scope="col">Email</th>
-        <th scope="col">department</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let emp of employeeData">
-        <td></td>
-        <td>{{emp?.firstName}} {{emp?.lastName}}</td>
-        <td>{{emp?.email}}</td>
-        <td>{{emp?.department}}</td>
-      </tr>
-    </tbody>
-  </table>
+  <h6>Employee Table</h6>
+  <div class="row">
+  <div class="input-group mb-2 input-group-text">
+    <!-- <input type="text" class="form-control empty form-control-text" placeholder="&#xF002;"> -->
+    <div class="input-group-prepend">
+      <div class="input-group-text-icon">
+         <i class="fas fa-search"></i>
+       </div>
+    </div>
+    <input type="text" class="form-control form-control-text" placeholder="Search by name">
+  </div>
+  <!-- <div class="btn-group btn-group-text">
+    <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown">
+      Download
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item">Excel</a>
+      <a class="dropdown-item">PDF</a>
+      <a class="dropdown-item">CSV</a>
+    </div>
+  </div>
+  </div> -->
+  <div class="table-data">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Sl No.</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Department</th>
+          <th scope="col">Gender</th>
+          <th scope="col">Age</th>
+          <th scope="col">Mob</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let emp of employeeData; let i = index">
+          <td>{{i+1}}</td>
+          <td>{{emp?.firstName}} {{emp?.lastName}}</td>
+          <td>{{emp?.email}}</td>
+          <td>{{emp?.department}}</td>
+          <td>{{emp?.gender}}</td>
+          <td>{{emp?.age}}</td>
+          <td>{{emp?.mob}}</td>
+          <td>
+            <i class="fa-regular fa-eye"></i>
+            <i class="fa-regular fa-pen-to-square"></i>
+            <i class="fa-regular fa-trash-can"></i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row-custom">
+    <div class="left">
+      <span>Show :</span>
+      <select class="form-select form-select-text" aria-label="Default select example">
+        <option selected>10</option>
+        <option value="1">20</option>
+        <option value="2">30</option>
+      </select>
+    </div>
+    <div class="right">
+      <nav aria-label="Page navigation">
+        <ul class="pagination pagination-text">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </div>

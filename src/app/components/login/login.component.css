@@ -65,5 +65,5 @@ html {
     outline: 0px !important;
 }
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: red !important;
+    background-color: #dc3545 !important;
 }

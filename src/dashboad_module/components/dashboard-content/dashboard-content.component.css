@@ -9,7 +9,7 @@
   .first{
       height: 60px !important;
       width: 180px;
-      background-image: linear-gradient(to right, red , rgb(228, 99, 70));
+      background-image: linear-gradient(to right, #dc3545 , rgb(228, 99, 70));
       margin: auto;
       border-radius: 10px;
       color: #fff;

@@ -10,7 +10,7 @@
 .dropdown-toggle::after {
     display:none;
     border : none !important;
-    border-color: red;
+    border-color: #dc3545;
   }
   .navbar {
     position: fixed;

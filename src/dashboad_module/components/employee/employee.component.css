@@ -1,0 +1,76 @@
+.table-data {
+    height: 380px;
+    /* background-color: aqua; */
+    overflow: hidden;
+}
+table {
+    font-size: 10px;
+}
+table thead {
+    background-color: #dc3545;
+    color: #fff;
+}
+table td {
+    padding: 0.4rem 0.4rem;
+}
+table td svg {
+    padding: 2px 5px;
+    cursor: pointer;
+}
+h6 {
+    margin-top: 10px;
+}
+.input-group-text {
+    width: 30%;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    margin-left: 10px;
+}
+.input-group-text-icon {
+ border: 1px solid #ced4da;
+ padding: 0px 4px;
+ color: #ced4da;
+}
+.form-control-text {
+    border-radius: 0;
+    padding: 0.2rem 0.2rem;
+    font-size: 12px;
+}
+.btn-group-text {
+    width: 20%;
+}
+.pagination-text{
+    font-size: 10px;
+    --bs-pagination-font-size: 10px;
+    --bs-pagination-color: black;
+    margin-left: 50%;
+    margin-top: 10px;
+    
+}
+.row-custom {
+    display: flex;
+}
+.left {
+    float: left;
+    height: 50px;
+    width: 50%;
+    /* background-color: #dc3545; */
+}
+.right {
+    float:right;
+    height: 50px;
+    width: 50%;
+    /* background-color: blue; */
+}
+.form-select-text {
+    width: 10%;
+    display: inline;
+    font-size: 10px;
+    margin-top: 10px;
+    padding: 0.1rem;
+}
+.left span {
+    font-size: 10px;
+}

@@ -19,9 +19,9 @@
 }
 .btnRegister{
     width: 10%;
-    background-color: red;
+    background-color: #dc3545;
     color: white;
-    border-color: red;
+    border-color: #dc3545;
     border-radius: 5px;
 }
 .row{
