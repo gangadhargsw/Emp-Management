@@ -1,27 +1,31 @@
 <div class="container">
-  <h6>Employee Table</h6>
-  <div class="row">
-  <div class="input-group mb-2 input-group-text">
-    <!-- <input type="text" class="form-control empty form-control-text" placeholder="&#xF002;"> -->
-    <div class="input-group-prepend">
-      <div class="input-group-text-icon">
-         <i class="fas fa-search"></i>
-       </div>
+  <h6 class="mb-3">Employee Table</h6>
+  <div class="row header-section mb-2">
+    <div class="input-group input-group-text" *ngIf="!tableBodyHide">
+      <div class="input-group-prepend">
+        <div class="input-group-text-icon">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      <input type="text" class="form-control form-control-text" placeholder="Search by name">
     </div>
-    <input type="text" class="form-control form-control-text" placeholder="Search by name">
+    <div class="download-btn" *ngIf="!tableBodyHide">
+      <select class="form-select form-select-button" aria-label="Default select example">
+        <option value="0">Excel</option>
+        <option value="1">CSV</option>
+        <option value="2">PDF</option>
+      </select>
+    </div>
+    <div class="btn btn-crt-emp align-right">Create Employee</div>
   </div>
-  <!-- <div class="btn-group btn-group-text">
-    <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown">
-      Download
-    </button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item">Excel</a>
-      <a class="dropdown-item">PDF</a>
-      <a class="dropdown-item">CSV</a>
+  <div class="table-data" *ngIf="tableBodyHide">
+    <div class="no-data">
+      <div class="circle">
+        <i class="fa-solid fa-users"></i>
+      </div>
     </div>
   </div>
-  </div> -->
-  <div class="table-data">
+  <div class="table-data" *ngIf="!tableBodyHide">
     <table class="table table-striped">
       <thead>
         <tr>
@@ -53,7 +57,7 @@
       </tbody>
     </table>
   </div>
-  <div class="row-custom">
+  <div class="row-custom" *ngIf="!tableBodyHide">
     <div class="left">
       <span>Show :</span>
       <select class="form-select form-select-text" aria-label="Default select example">

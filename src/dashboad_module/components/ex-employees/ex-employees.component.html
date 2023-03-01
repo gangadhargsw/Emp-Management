@@ -1,0 +1,11 @@
+<div class="last-year-data" *ngIf="btn">
+    Input Box Value : {{seachtext}}
+    Name : {{name}}
+</div>
+<div class="space-gap">
+    <input type="text" [(ngModel)]="seachtext">
+</div>
+<div class="space-gap">
+    Name : <input type="text" #a>
+</div>
+<button type="button" class="btn btn-primary space-gap" (click)="submit(a.value)">Submit</button>

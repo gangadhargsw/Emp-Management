@@ -5,6 +5,8 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { EmployeeComponent } from './components/employee/employee.component';
 import { DashboardContentComponent } from './components/dashboard-content/dashboard-content.component';
+import { ExEmployeesComponent } from './components/ex-employees/ex-employees.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -13,11 +15,13 @@ import { DashboardContentComponent } from './components/dashboard-content/dashbo
     DashboardComponent,
     SidenavComponent,
     EmployeeComponent,
-    DashboardContentComponent
+    DashboardContentComponent,
+    ExEmployeesComponent
   ],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [DashboardComponent]

@@ -7,7 +7,9 @@ import { EmpserviceService } from 'src/dashboad_module/services/empservice.servi
   styleUrls: ['./employee.component.css']
 })
 export class EmployeeComponent implements OnInit {
-employeeData: any = [];
+employeeData:any = [];
+tableBodyHide: boolean = true;
+
   constructor(private empService: EmpserviceService) { }
 
   ngOnInit(): void {
@@ -17,6 +19,10 @@ employeeData: any = [];
     this.empService.getAllEmployees().subscribe((data) => {
       console.log(data);
       this.employeeData = data;
+      this.tableBodyHide = false;
+    },(err) => {
+      console.log(err);
+      this.tableBodyHide = true;
     })
   }
 
